@@ -1,0 +1,10 @@
+com\example\services\HibernateUtil.class
+com\example\entities\User.class
+com\example\MainApp.class
+com\example\services\DatabaseService.class
+com\example\controllers\MainController.class
+com\example\entities\Taxon.class
+com\example\services\QueryService.class
+com\example\entities\Observation.class
+com\example\entities\Identification.class
+com\example\entities\Image.class

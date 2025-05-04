@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10" alignment="CENTER"
+      fx:controller="com.example.controllers.MainController">
+    <Label text="Sistema de Gestión de Observaciones" style="-fx-font-size: 20;"/>
+    <Button text="Insertar Imagen" onAction="#handleInsertImage"/>
+    <Button text="Insertar Observación" onAction="#handleInsertObservation"/>
+    <Button text="Insertar Identificación" onAction="#handleInsertIdentification"/>
+    <Button text="Actualizar Imagen" onAction="#handleUpdateImage"/>
+    <Button text="Actualizar Observation" onAction="#handleUpdateObservation"/>
+    <Button text="Actualizar Identification" onAction="#handleUpdateIdentification"/>
+    <Button text="Eliminar Registro" onAction="#handleDeleteRecord"/>
+    <Button text="Consultar Observaciones" onAction="#handleQueryData"/>
+    <Button text="Consultar Taxonomía" onAction="#handleQueryTaxonomy"/>
+    <Button text="Consultar Detalles de Imagen" onAction="#handleQueryImageDetails"/>
+    <TextField fx:id="userIdField" promptText="User ID"/>
+    <TextField fx:id="taxonIdField" promptText="Taxon ID - Columna a actualizar"/>
+    <TextField fx:id="placeField" promptText="Lugar - Nuevo valor"/>
+    <TextField fx:id="latitudeField" promptText="Latitud"/>
+    <TextField fx:id="longitudeField" promptText="Longitud"/>
+    <TextField fx:id="licenseField" promptText="Licencia"/>
+    <TextField fx:id="imageUrlField" promptText="URL de la Imagen"/>
+    <TextField fx:id="imageIdField" promptText="ID de la Imagen"/>
+    <TextField fx:id="observationIdField" promptText="ID de la Observación"/>
+    <TextField fx:id="identificationLevelField" promptText="Nivel de Identificación"/>
+    <TextArea fx:id="resultArea" prefWidth="400" prefHeight="200" editable="false"/>
+</VBox>
